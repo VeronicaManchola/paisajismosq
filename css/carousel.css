@@ -103,6 +103,10 @@ textarea {
   font-size: 20px;
 }
 
+.slider-semitext.m-auto {
+  padding: 0 85px;
+}
+
 .floating-text {
   position: absolute;
   max-width: 100vw;
@@ -159,6 +163,12 @@ ul.lead li:before {
   }
 }
 
+@media (min-width: 769px) and (max-width: 991px) {
+  .slider-semitext.m-auto {
+    padding: 0 70px;
+  }
+}
+
 @media (min-width: 577px) and (max-width: 768px) {
   .floating-text {
     position: absolute;
@@ -179,6 +189,10 @@ ul.lead li:before {
   .slider-semitext {
     font-size: 40px;
   }
+
+  .slider-semitext.m-auto {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -197,6 +211,10 @@ ul.lead li:before {
     width: 100%;
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .slider-semitext.m-auto {
+    padding: 0 15px;
   }
 
   .floating-text {
