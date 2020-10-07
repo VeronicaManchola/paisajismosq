@@ -112,14 +112,14 @@
         <div class="container">
             <div class="blur">
                 <div class="col-12 slider-typography d-flex justify-content-center align-items-center flex-column flex-md-row">
-                    <ul class="lead slider-subtext ml-md-5 w-75">
+                    <ul class="lead slider-subtext ml-md-5 w-75 mb-0">
                         <li>+ 100.000 M2 áreas verdes mantenidas en la Región Metropolitana</li>
                         <br>
                         <li>+ 10 años de experiencia</li>
                         <br>
                         <li>Clientes Corporativos</li>
-                        <br>
-                        <li>Los mejores precios del mercado</li>
+                        <br class="d-none d-sm-block">
+                        <li class="d-none d-sm-block">Los mejores precios del mercado</li>
                     </ul>
                 </div>
             </div>
@@ -186,34 +186,36 @@
                </div>
            </div>
            <div class="col-12 col-md-6">
-               <form>
+               <div class="form-msg">
+               </div>
+               <form id="contact-form" action="javascript:void(0);">
                    <div class="form-group row">
                        <label for="inputCompany" class="col-sm-2 col-form-label">Empresa</label>
                        <div class="col-sm-10">
-                           <input type="text" class="form-control" id="inputCompany">
+                           <input type="text" class="form-control" name="empresa" id="inputCompany">
                        </div>
                    </div>
                    <div class="form-group row">
                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                        <div class="col-sm-10">
-                           <input type="email" class="form-control" id="inputEmail">
+                           <input type="email" class="form-control" name="email" id="inputEmail">
                        </div>
                    </div>
                    <div class="form-group row">
                        <label for="inputPhone" class="col-sm-2 col-form-label">Teléfono</label>
                        <div class="col-sm-10">
-                           <input type="text" class="form-control" id="inputPhone" min="9" max="12">
+                           <input type="text" class="form-control" name="fono" id="inputPhone" min="9" max="12">
                        </div>
                    </div>
                    <div class="form-group row">
                        <label for="inputMsg" class="col-sm-2 col-form-label">Mensaje</label>
                        <div class="col-sm-10">
-                           <textarea class="form-control" id="inputMsg"></textarea>
+                           <textarea class="form-control" name="mensaje" id="inputMsg"></textarea>
                        </div>
                    </div>
                    <div class="form-group row">
                        <div class="col-12 text-right">
-                           <button type="submit" class="btn btn-success">Enviar</button>
+                           <button type="submit" id="send" class="btn btn-success">Enviar</button>
                        </div>
                    </div>
                </form>
